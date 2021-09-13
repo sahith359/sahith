@@ -1,13 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import {BrowserRouter} from 'react-router-dom'
-import App from './App'
+import Header from '../Header'
+import './index.css'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root'),
+const Cart = () => (
+  <>
+    <Header />
+    <div className="cart-container">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-cart-img.png"
+        alt="cart"
+        className="cart-img"
+      />
+    </div>
+  </>
 )
+
+export default Cart
